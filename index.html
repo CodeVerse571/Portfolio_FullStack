@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Eduardo Andrés</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Eduardo Andrés</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Acerca de</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Foto de perfil de Eduardo Andrés" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola, soy</p>
+        <h1 class="title">Eduardo Andrés</h1>
+        <p class="section__text__p2">Desarrollador FullStack</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Descargar CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Información de Contacto
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Mi perfil de LinkedIn"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Mi perfil de GitHub"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conózcame Mejor</p>
+      <h1 class="title">Acerca de Mí</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Foto de perfil"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Ícono de educación"
+                class="icon"
+              />
+              <h3>Educación</h3>
+              <p>
+                Diplomado en Ingeniería de Software<br />Universidad Técnica
+                Nacional
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Soy Eduardo Andrés, un apasionado desarrollador FullStack con
+              experiencia en la creación de soluciones web modernas e
+              innovadoras. Me encanta transformar ideas en aplicaciones
+              funcionales y eficientes, combinando tecnologías de vanguardia
+              como HTML, CSS, JavaScript, TypeScript, React, Node.js, y más,
+              para ofrecer experiencias únicas a los usuarios. En este espacio
+              encontrarás una muestra de mi trabajo, mi recorrido profesional y
+              mi pasión por seguir aprendiendo y creando. Si buscas un
+              desarrollador comprometido, orientado a resultados y siempre en
+              búsqueda de mejorar, estás en el lugar correcto. Explora mis
+              proyectos, conoce mi experiencia y no dudes en contactarme para
+              colaborar juntos en tu próxima idea. ¡Hablemos pronto!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícono de flecha"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explora Mi</p>
+      <h1 class="title">Experiencia</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desarrollo Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experimentado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experimentado</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desarrollo Backend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ícono de experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermedio</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícono de flecha"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explora Mis Recientes</p>
+      <h1 class="title">Proyectos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Proyecto 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proyecto Uno</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Demo en Vivo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Proyecto 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proyecto Dos</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Demo en Vivo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Proyecto 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Proyecto Tres</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Demo en Vivo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Ícono de flecha"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Póngase en Contacto</p>
+      <h1 class="title">Contáctame</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Ícono de correo electrónico"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:eandreszambrano4@gmail.com"
+              >eandreszambrano4@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Ícono de LinkedIn"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Eduardo Andrés. Todos los Derechos Reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
